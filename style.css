@@ -29,6 +29,8 @@ header nav {
   background-color: rgb(0, 0, 0);
   border-bottom: 1px solid rgb(56, 56, 56);
   padding: 0 140px;
+  position: absolute;
+  top: 0;
 }
 
 header nav .left {
@@ -105,7 +107,7 @@ header nav .left .menu .bars {
   border-radius: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 /* Hero section styles */
@@ -121,11 +123,15 @@ header nav .left .menu .bars {
   top: 80px;
   padding: 80px 140px;
   font-family: "poppins", sans-serif;
+  overflow: hidden;
 }
 
 .hero .right-hero img {
   width: 83%;
   height: 83%;
+  border-radius: 15px;
+  border: 2px solid rgb(121, 120, 120);
+  transform: rotate(3deg);
 }
 
 .right-hero {
