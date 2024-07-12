@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
    const rightSection = document.querySelector('.right');
  
    function setInitialHeight() {
-     if (window.innerWidth < 800) {
+     if (window.innerWidth < 900) {
        rightSection.style.height = '0px';
      } else {
        rightSection.style.height = 'auto';

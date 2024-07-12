@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -25,15 +26,19 @@ header nav {
   align-items: center;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(206, 206, 206);
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(56, 56, 56);
   padding: 0 140px;
-  position: fixed;
-  top: 0;
 }
 
 header nav .left {
   display: flex;
+  align-items: center;
+}
+
+header nav .left a {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -50,12 +55,11 @@ header nav .right ul {
 header nav .right ul li {
   margin: 0 25px;
   font-size: 1.2rem;
-  position: relative;
 }
 
 header nav .right ul li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: inline-block;
   padding: 0.5rem 0;
   position: relative;
@@ -66,19 +70,19 @@ header nav .right ul li a::after {
   display: block;
   height: 1px;
   width: 0;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   transition: width 0.4s;
   position: absolute;
-  left: 0;
+  left: 1px;
   bottom: 7px;
 }
 
 header nav .right ul li a:hover::after {
-  width: 90%;
+  width: 85%;
 }
 
 header nav .right ul li a.active::after {
-  width: 90%;
+  width: 85%;
   transition: none;
 }
 
@@ -102,4 +106,81 @@ header nav .left .menu .bars {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: black;
+}
+
+/* Hero section styles */
+
+.hero {
+  background-color: rgb(7, 7, 7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  padding: 80px 140px;
+  font-family: "poppins", sans-serif;
+}
+
+.hero .right-hero img {
+  width: 83%;
+  height: 83%;
+}
+
+.right-hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero .left-hero{
+  width: 90%;
+}
+
+.hero .left-hero h2.name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.hero .left-hero h1.skill {
+  font-size: 3rem;
+  background: linear-gradient(90deg, rgba(7,60,113,1) 0%, rgba(19,59,187,1) 50%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 57px;
+}
+
+.hero .left-hero p.hero-info {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  line-height: 30px;
+  color: rgb(170, 170, 170);
+}
+.hero .left-hero .button {
+  display: inline-block;
+  padding:10px 15px;
+  border-radius: 32px;
+  background: transparent;
+  border: 1px solid white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  transition: 0.3s ease all;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  position: relative;
+  right: 3px;
+}
+
+.hero .left-hero .button:hover {
+  background: rgba(0,212,255,1);
+  border: 1px solid black;
+  color: black;
+}
+
+.hero .left-hero a,.hero .left-hero h1,.hero .left-hero h2,.hero .left-hero p{
+  margin: 7px 0;
 }
