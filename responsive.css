@@ -1,7 +1,6 @@
 @media screen and (max-width: 900px) {
   header nav{
     height: 90px;
-    border-bottom: 1px solid rgb(56, 56, 56);
   }
   header nav .left .menu{
     display: flex;
@@ -52,10 +51,6 @@
     display: flex;
     justify-content: space-between;
   }
-  .hero{
-    position: absolute;
-    top: 90px;
-  }
 }
 @media screen and (max-width: 475px) {
   header nav{
@@ -84,8 +79,7 @@
     transform: translateY(-12px) rotate(-90deg);
   }
   .hero{
-    position: absolute;
-    top: 70px;
+    margin-top: 70px;
   }
   .hero .right-hero img{
     display: none;
@@ -102,7 +96,9 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+/* Media query to hide the hero image for good responsiveness */
+
+@media screen and (max-width: 765px) {
   .hero .right-hero{
     display: none;
   }
@@ -117,6 +113,9 @@
   .hero .left-hero h2.name{
     font-size: 1.8rem;
   }
+  .services .service-container .service-box h2{
+    font-size: 1.4rem;
+  }
 }
 @media (min-width:350px) and (max-width: 425px) {
   .hero .left-hero h1.skill{
@@ -125,16 +124,22 @@
   .hero .left-hero h2.name{
     font-size: 1.6rem;
   }
+  .services .service-container .service-box h2{
+    font-size: 1.3rem;
+  }
 }
 @media (min-width:260px) and (max-width: 350px) {
   .hero .left-hero h1.skill{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .hero .left-hero h2.name{
     font-size: 1.5rem;
   }
   .hero .left-hero a.button{
     font-size: 1.1rem;
+  }
+  .services .service-container .service-box h2{
+    font-size: 1.2rem;
   }
 }
 
@@ -144,9 +149,15 @@
     .hero{
       padding: 80px 100px;
     }
+    .services{
+      padding: 80px 100px;
+    }
 }
 @media (min-width: 600px) and (max-width: 700px) {
   .hero{
+    padding: 70px 85px;
+  }
+  .services{
     padding: 70px 85px;
   }
 }
@@ -154,14 +165,29 @@
   .hero{
     padding: 70px 70px;
   }
+  .services{
+    padding: 70px 70px;
+  }
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .hero{
     padding: 65px 55px;
   }
+  .services{
+    padding: 65px 55px;
+  }
+  .services .service-container .service-box{
+    padding: 25px;
+  }
 }
 @media (min-width: 200px) and (max-width: 300px) {
   .hero{
     padding: 65px 50px;
+  }
+  .services{
+    padding: 65px 50px;
+  }
+  .services .service-container .service-box{
+    padding: 20px;
   }
 }
