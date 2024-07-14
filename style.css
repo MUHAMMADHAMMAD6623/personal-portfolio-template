@@ -266,9 +266,57 @@ header nav .left .menu .bars {
   font-size: 2.5rem;
 }
 
+/* Skill section styles */
 
-
-
+.skills{
+  font-family:'poppins', sans-serif;
+  background-color: rgb(7, 7, 7);
+  color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 80px 140px;
+}
+.skills .skill-box{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 170px;
+  height: 170px;
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid white;
+  gap: 1.5rem;
+  transition: all 0.4s ease-in-out;
+}
+.skills .skill-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.skills .skill-box:hover{
+  background-color: rgba(0,212,255,1);
+}
+.skills .skill-box:hover img{
+  scale: 1.2;
+}
+.skills .skill-box:hover h3{
+  color: #000000;
+}
+.skills .skill-box h3{
+  margin-bottom:-20px;
+}
+.skills .skill-heading{
+  font-weight: 500;
+  font-size: 2.5rem;
+}
 /* Swiper js css styles */
 
 .swiper {
