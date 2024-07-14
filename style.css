@@ -246,3 +246,62 @@ header nav .left .menu .bars {
 .services .service-container .service-box:hover p{
   color: rgb(7, 7, 7);
 }
+
+/* Testimonial section styles */
+
+.testimonial{
+  width: 100%;
+  height: auto;
+  padding: 80px 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family:'poppins', sans-serif;
+  color: white;
+  background-color: rgb(7, 7, 7);
+  gap: 3rem;
+}
+.testimonial .testimonial-heading{
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+
+
+
+/* Swiper js css styles */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: #000000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid white;
+  padding: 20px;
+  gap: 4rem;
+}
+
+.swiper-slide h2{
+  font-weight: 600;
+}
+.swiper-slide p{
+  color: rgb(170, 170, 170);
+}
+.swiper-slide .flex-end{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+.swiper-slide .flex-start{
+  margin: 10px 0;
+}
+.swiper-slide .normal{
+  margin: 10px 0;
+}
