@@ -1,189 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry - Personal Portfolio HTML CSS JavaScript Template</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- swiper js css cdn needed for testimnial section -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harry - Personal Portfolio HTML CSS JavaScript Template</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="responsive.css" />
-  <!-- swiper js css cdn needed for testimnial section -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="left">
-        <div class="menu" onclick="menu()">
-          <div class="bars not-clicked"></div>
-          <div class="bars not-clicked"></div>
-          <div class="bars not-clicked"></div>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <div class="menu" onclick="menu()">
+            <div class="bars not-clicked"></div>
+            <div class="bars not-clicked"></div>
+            <div class="bars not-clicked"></div>
+          </div>
+          <a href="index.html"><img src="header.png" /></a>
         </div>
-        <a href="index.html"><img src="header.png" /></a>
-      </div>
-      <div class="right">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <section class="hero">
-    <div class="left-hero">
-      <h2 class="name">I am Harry</h2>
-      <h1 class="skill">Frontend Developer + Wordpress Developer</h1>
-      <p class="hero-info">
-        I meticulously deconstruct intricate user experience issues to devise
-        solutions centered on integrity. These solutions are designed to
-        connect billions of people.
-      </p>
-      <a href="#" class="button">Download CV</a>
-    </div>
-    <div class="right-hero">
-      <img src="hero.jpg" />
-    </div>
-  </section>
-  <section class="services" id="services">
-    <h1>My Services</h1>
-    <div class="service-container">
-      <div class="service-box">
-        <img src="web-development.png" style="width: 35px; height: 35px" />
-        <h2 class="service-heading">Web Development</h2>
-        <p class="service-description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
-          rerum tempore, nihil, adipisci quae a culpa voluptates repellendus,
-          doloribus dicta. Aliquid quia consectetur harum, magnam eius
-          mollitia rerum at possimus consequatur reiciendis cum, unde
-          architecto nihil eligendi dicta culpa obcaecati eveniet error.
-          Obcaecati sed accusantium, libero molestiae provident reiciendis.
+        <div class="right">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="left-hero">
+        <h2 class="name">I am Harry</h2>
+        <h1 class="skill">Frontend Developer + Wordpress Developer</h1>
+        <p class="hero-info">
+          I meticulously deconstruct intricate user experience issues to devise
+          solutions centered on integrity. These solutions are designed to
+          connect billions of people.
         </p>
+        <a href="#" class="button">Download CV</a>
       </div>
-      <div class="service-box">
-        <img src="web-development.png" style="width: 35px; height: 35px" />
-        <h2 class="service-heading">Web Design</h2>
-        <p class="service-description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
-          rerum tempore, nihil, adipisci quae a culpa voluptates repellendus,
-          doloribus dicta. Aliquid quia consectetur harum, magnam eius
-          mollitia rerum at possimus consequatur reiciendis cum, unde
-          architecto nihil eligendi dicta culpa obcaecati eveniet error.
-          Obcaecati sed accusantium, libero molestiae provident reiciendis.
-        </p>
+      <div class="right-hero">
+        <img src="hero.jpg" />
       </div>
-      <div class="service-box">
-        <img src="web-development.png" style="width: 35px; height: 35px" />
-        <h2 class="service-heading">Web Development</h2>
-        <p class="service-description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
-          rerum tempore, nihil, adipisci quae a culpa voluptates repellendus,
-          doloribus dicta. Aliquid quia consectetur harum, magnam eius
-          mollitia rerum at possimus consequatur reiciendis cum, unde
-          architecto nihil eligendi dicta culpa obcaecati eveniet error.
-          Obcaecati sed accusantium, libero molestiae provident reiciendis.
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="testimonial" id="testimonials">
-    <h2 class="testimonial-heading">Testimonials</h2>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="flex-start">
-            <img src="quotes.png" style="width: 45px;height: 45px;"> 
-          </div>
-          <div class="normal">
-            <h2>Mark Zuckerburg</h2> 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure, quo consequuntur esse maxime illum, hic possimus sit exercitationem, officiis quidem veniam explicabo reiciendis voluptatibus autem repudiandae distinctio est velit saepe vitae.</p>
-          </div>
-          <div class="flex-end">
-            <img src="quotesinverted.png" style="height: 45px;width: 45px;">
-          </div>
+    </section>
+    <section class="services" id="services">
+      <h1>My Services</h1>
+      <div class="service-container">
+        <div class="service-box">
+          <img src="web-development.png" style="width: 35px; height: 35px" />
+          <h2 class="service-heading">Web Development</h2>
+          <p class="service-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
+            rerum tempore, nihil, adipisci quae a culpa voluptates repellendus,
+            doloribus dicta. Aliquid quia consectetur harum, magnam eius
+            mollitia rerum at possimus consequatur reiciendis cum, unde
+            architecto nihil eligendi dicta culpa obcaecati eveniet error.
+            Obcaecati sed accusantium, libero molestiae provident reiciendis.
+          </p>
         </div>
-        <div class="swiper-slide">
-          <div class="flex-start">
-            <img src="quotes.png" style="width: 45px;height: 45px;"> 
-          </div>
-          <div class="normal">
-            <h2>Bernard Arnault</h2> 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure, quo consequuntur esse maxime illum, hic possimus sit exercitationem, officiis quidem veniam explicabo reiciendis voluptatibus autem repudiandae distinctio est velit saepe vitae.</p>
-          </div>
-          <div class="flex-end">
-            <img src="quotesinverted.png" style="height: 45px;width: 45px;">
-          </div>
+        <div class="service-box">
+          <img src="web-development.png" style="width: 35px; height: 35px" />
+          <h2 class="service-heading">Web Design</h2>
+          <p class="service-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
+            rerum tempore, nihil, adipisci quae a culpa voluptates repellendus,
+            doloribus dicta. Aliquid quia consectetur harum, magnam eius
+            mollitia rerum at possimus consequatur reiciendis cum, unde
+            architecto nihil eligendi dicta culpa obcaecati eveniet error.
+            Obcaecati sed accusantium, libero molestiae provident reiciendis.
+          </p>
         </div>
-        <div class="swiper-slide">
-          <div class="flex-start">
-            <img src="quotes.png" style="width: 45px;height: 45px;"> 
-          </div>
-          <div class="normal">
-            <h2>Elon Musk</h2> 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure, quo consequuntur esse maxime illum, hic possimus sit exercitationem, officiis quidem veniam explicabo reiciendis voluptatibus autem repudiandae distinctio est velit saepe vitae.</p>
-          </div>
-          <div class="flex-end">
-            <img src="quotesinverted.png" style="height: 45px;width: 45px;">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="flex-start">
-            <img src="quotes.png" style="width: 45px;height: 45px;"> 
-          </div>
-          <div class="normal">
-            <h2>Bill Gates</h2> 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure, quo consequuntur esse maxime illum, hic possimus sit exercitationem, officiis quidem veniam explicabo reiciendis voluptatibus autem repudiandae distinctio est velit saepe vitae.</p>
-          </div>
-          <div class="flex-end">
-            <img src="quotesinverted.png" style="height: 45px;width: 45px;">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="flex-start">
-            <img src="quotes.png" style="width: 45px;height: 45px;"> 
-          </div>
-          <div class="normal">
-            <h2>Jeff Bezos</h2> 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure, quo consequuntur esse maxime illum, hic possimus sit exercitationem, officiis quidem veniam explicabo reiciendis voluptatibus autem repudiandae distinctio est velit saepe vitae.</p>
-          </div>
-          <div class="flex-end">
-            <img src="quotesinverted.png" style="height: 45px;width: 45px;">
-          </div>
+        <div class="service-box">
+          <img src="web-development.png" style="width: 35px; height: 35px" />
+          <h2 class="service-heading">Web Development</h2>
+          <p class="service-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
+            rerum tempore, nihil, adipisci quae a culpa voluptates repellendus,
+            doloribus dicta. Aliquid quia consectetur harum, magnam eius
+            mollitia rerum at possimus consequatur reiciendis cum, unde
+            architecto nihil eligendi dicta culpa obcaecati eveniet error.
+            Obcaecati sed accusantium, libero molestiae provident reiciendis.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="skills">
-    <h2 class="skill-heading">My Skills</h2>
-    <div class="skill-container">
-    <div class="skill-box">
-      <img src="html.png" style="height: 50px;width: 50px;transition: scale 0.3s ease-in-out;">
-      <h3 class="skill-percentage">99%</h3>
-    </div>
-    <div class="skill-box">
-      <img src="css-3.png" style="height: 50px;width: 50px;transition: scale 0.3s ease-in-out;">
-      <h3 class="skill-percentage">93%</h3>
-    </div>
-    <div class="skill-box">
-      <img src="js.png" style="height: 50px;width: 50px;transition: scale 0.3s ease-in-out;">
-      <h3 class="skill-percentage">90%</h3>
-    </div>
-    <div class="skill-box">
-      <img src="wordpress.png" style="height: 50px;width: 50px;transition: scale 0.3s ease-in-out;">
-      <h3 class="skill-percentage">100%</h3>
-    </div>
-    <div class="skill-box">
-      <img src="squarespace.png" style="height: 50px;width: 50px;transition: scale 0.3s ease-in-out;">
-      <h3 class="skill-percentage">95%</h3>
-    </div>
-    </div>
-  </section>
-  <script src="script.js"></script>
-  <!-- swiper js javascript cdn needed to make the testimonial section -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
-
+    </section>
+    <section class="testimonial" id="testimonials">
+      <h2 class="testimonial-heading">Testimonials</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex-start">
+              <img src="quotes.png" style="width: 45px; height: 45px" />
+            </div>
+            <div class="normal">
+              <h2>Mark Zuckerburg</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam iure, quo consequuntur esse maxime illum, hic possimus
+                sit exercitationem, officiis quidem veniam explicabo reiciendis
+                voluptatibus autem repudiandae distinctio est velit saepe vitae.
+              </p>
+            </div>
+            <div class="flex-end">
+              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex-start">
+              <img src="quotes.png" style="width: 45px; height: 45px" />
+            </div>
+            <div class="normal">
+              <h2>Bernard Arnault</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam iure, quo consequuntur esse maxime illum, hic possimus
+                sit exercitationem, officiis quidem veniam explicabo reiciendis
+                voluptatibus autem repudiandae distinctio est velit saepe vitae.
+              </p>
+            </div>
+            <div class="flex-end">
+              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex-start">
+              <img src="quotes.png" style="width: 45px; height: 45px" />
+            </div>
+            <div class="normal">
+              <h2>Elon Musk</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam iure, quo consequuntur esse maxime illum, hic possimus
+                sit exercitationem, officiis quidem veniam explicabo reiciendis
+                voluptatibus autem repudiandae distinctio est velit saepe vitae.
+              </p>
+            </div>
+            <div class="flex-end">
+              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex-start">
+              <img src="quotes.png" style="width: 45px; height: 45px" />
+            </div>
+            <div class="normal">
+              <h2>Bill Gates</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam iure, quo consequuntur esse maxime illum, hic possimus
+                sit exercitationem, officiis quidem veniam explicabo reiciendis
+                voluptatibus autem repudiandae distinctio est velit saepe vitae.
+              </p>
+            </div>
+            <div class="flex-end">
+              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex-start">
+              <img src="quotes.png" style="width: 45px; height: 45px" />
+            </div>
+            <div class="normal">
+              <h2>Jeff Bezos</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam iure, quo consequuntur esse maxime illum, hic possimus
+                sit exercitationem, officiis quidem veniam explicabo reiciendis
+                voluptatibus autem repudiandae distinctio est velit saepe vitae.
+              </p>
+            </div>
+            <div class="flex-end">
+              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <h2 class="skill-heading">My Skills</h2>
+      <div class="skill-container">
+        <div class="skill-box">
+          <img
+            src="html.png"
+            style="
+              height: 50px;
+              width: 50px;
+              transition: scale 0.3s ease-in-out;
+            "
+          />
+          <h3 class="skill-percentage">99%</h3>
+        </div>
+        <div class="skill-box">
+          <img
+            src="css-3.png"
+            style="
+              height: 50px;
+              width: 50px;
+              transition: scale 0.3s ease-in-out;
+            "
+          />
+          <h3 class="skill-percentage">93%</h3>
+        </div>
+        <div class="skill-box">
+          <img
+            src="js.png"
+            style="
+              height: 50px;
+              width: 50px;
+              transition: scale 0.3s ease-in-out;
+            "
+          />
+          <h3 class="skill-percentage">90%</h3>
+        </div>
+        <div class="skill-box">
+          <img
+            src="wordpress.png"
+            style="
+              height: 50px;
+              width: 50px;
+              transition: scale 0.3s ease-in-out;
+            "
+          />
+          <h3 class="skill-percentage">100%</h3>
+        </div>
+        <div class="skill-box">
+          <img
+            src="squarespace.png"
+            style="
+              height: 50px;
+              width: 50px;
+              transition: scale 0.3s ease-in-out;
+            "
+          />
+          <h3 class="skill-percentage">95%</h3>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="Contact">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <div class="contact-container">
+        <div class="name-input-container">
+          <div class="first-input input-container">
+            <h3>First Name</h3>
+            <input type="text" />
+          </div>
+          <div class="second-input input-container">
+            <h3>Last Name</h3>
+          <input type="text" />
+          </div>
+        </div>
+        <div class="third-input input-container">
+          <h3>E-Mail</h3>
+          <input type="email" />
+        </div>
+        <div class="fourth-input input-container">
+          <h3>Message</h3>
+          <textarea class="textarea-type"></textarea>
+        </div>
+        <button class="button">Submit</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <!-- swiper js javascript cdn needed to make the testimonial section -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>

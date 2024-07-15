@@ -52,6 +52,19 @@
     justify-content: space-between;
   }
 }
+@media screen and (max-width: 570px) {
+  .contact .contact-container .name-input-container{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .contact .contact-container .name-input-container input{
+    width: 66vw;
+  }
+  .contact .contact-container .textarea-type{
+    height: 250px;
+  }
+}
 @media screen and (max-width: 475px) {
   header nav{
     height: 70px;
@@ -83,6 +96,9 @@
   }
   .hero .right-hero img{
     display: none;
+  }
+  .contact .contact-container .textarea-type{
+    height: 320px;
   }
 }
 @media screen and (max-width:365px) {
@@ -142,6 +158,9 @@
     font-size: 1.2rem;
   }
   .testimonial .testimonial-heading{
+    font-size: 2rem;
+  }
+  .skills .skill-heading{
     font-size: 2rem;
   }
 }

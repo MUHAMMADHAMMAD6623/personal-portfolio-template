@@ -303,6 +303,7 @@ header nav .left .menu .bars {
 }
 .skills .skill-box:hover{
   background-color: rgba(0,212,255,1);
+  border: 1px solid rgb(121, 120, 120);
 }
 .skills .skill-box:hover img{
   scale: 1.2;
@@ -316,6 +317,86 @@ header nav .left .menu .bars {
 .skills .skill-heading{
   font-weight: 500;
   font-size: 2.5rem;
+}
+.contact .contact-container .input-container h3{
+  font-weight: 400;
+}
+/* Contact section styles */
+
+.contact{
+  width: 100%;
+  background-color: rgb(7, 7, 7);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 80px 140px;
+  color: white;
+  font-family: 'poppins',sans-serif;
+}
+.contact .contact-heading{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.contact .contact-container input{
+  display: block;
+  width: 66vw;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid rgb(121, 120, 120);
+  font-family:'poppins', sans-serif;
+  font-size: 1.1rem;
+}
+.contact .contact-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact .contact-container .input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.contact .contact-container .name-input-container{
+  display: flex;
+  gap: 1.2rem;
+}
+.contact .contact-container .name-input-container input{
+  width: calc(32vw + 5px);
+}
+.contact .contact-container .textarea-type{
+  height: 200px;
+  resize: none;
+  width: 66vw;
+  font-size: 1.1rem;
+  padding: 10px;
+  outline: none;
+}
+.contact .contact-container button{
+    display: inline-block;
+    padding:10px 15px;
+    border-radius: 32px;
+    background: transparent;
+    border: 1px solid white;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+    transition: 0.3s ease all;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+.contact .contact-container button:hover{
+  background: rgba(0,212,255,1);
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+.contact .contact-container .input-container input:focus{
+  outline: none;
 }
 /* Swiper js css styles */
 
