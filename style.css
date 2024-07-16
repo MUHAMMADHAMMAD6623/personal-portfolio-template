@@ -51,7 +51,6 @@ header nav .left img {
   width: 60px;
   height: 53px;
 }
-
 header nav .right ul {
   list-style: none;
   display: flex;
@@ -59,7 +58,7 @@ header nav .right ul {
 
 header nav .right ul li {
   margin: 0 25px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 header nav .right ul li a {
@@ -397,6 +396,96 @@ header nav .left .menu .bars {
 }
 .contact .contact-container .input-container input:focus{
   outline: none;
+}
+
+/* Footer section styles */
+
+footer .left-footer .social-icons i {
+  color: rgb(150, 150, 150);
+  font-size: 1.5rem;
+}
+footer .left-footer .social-icons i:hover{
+  color: grey;
+}
+footer .left-footer .social-icons{
+  display: flex;
+  gap: 0.6rem;
+}
+footer {
+  width: 100%;
+  color: white;
+  background: #000000;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-top: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: 'poppins',sans-serif;
+}
+footer .left-footer img {
+  height: 3.5rem;
+  width: 10.5rem;
+}
+footer .left-footer {
+  width: 73%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+footer .top-footer .right-footer {
+  width: 27%;
+}
+footer .top-footer .right-footer .links {
+  display: flex;
+  flex-direction: column;
+}
+footer .bottom-footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  border-top: 1px solid #818181;
+}
+footer .top-footer {
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+footer .top-footer .right-footer .links a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+footer .right-footer a::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background: rgb(255, 255, 255);
+  transition: width 0.4s;
+}
+
+footer .right-footer a:nth-child(1):hover::after{
+  width: 14%;
+}
+footer .right-footer a:nth-child(2):hover::after{
+  width: 20%;
+}
+footer .right-footer a:nth-child(3):hover::after {
+  width: 21%;
+}
+footer .right-footer a:nth-child(4):hover::after{
+  width: 35%;
+}
+footer .right-footer a:nth-child(5):hover::after{
+  width: 42%;
 }
 /* Swiper js css styles */
 

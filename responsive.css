@@ -65,6 +65,11 @@
     height: 250px;
   }
 }
+@media screen and (max-width:600px) {
+  footer .top-footer{
+    padding-bottom: 30px;
+  }
+}
 @media screen and (max-width: 475px) {
   header nav{
     height: 70px;
@@ -100,6 +105,31 @@
   .contact .contact-container .textarea-type{
     height: 320px;
   }
+  footer .top-footer {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 0px;
+  }
+  footer .top-footer .right-footer{
+    width: 100%;
+  }
+  footer .top-footer .right-footer .links a{
+    font-size: 1rem;
+  }
+  footer .bottom-footer p{
+    font-size: 0.9rem;
+  }
+  footer{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  footer .bottom-footer{
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (max-width:365px) {
   header nav .left a img{
@@ -111,7 +141,11 @@
     right: 30px;
   }
 }
-
+@media screen and (max-width:445px) {
+  footer .top-footer{
+    padding-bottom: 13px;
+  }
+}
 /* Media query to hide the hero image for good responsiveness */
 
 @media screen and (max-width: 765px) {
@@ -127,7 +161,7 @@
     font-size: 2.2rem;
   }
   .hero .left-hero h2.name{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .services .service-container .service-box h2{
     font-size: 1.4rem;
