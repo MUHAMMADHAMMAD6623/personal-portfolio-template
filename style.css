@@ -398,6 +398,54 @@ header nav .left .menu .bars {
   outline: none;
 }
 
+/* About Page styles */
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 140px;
+  margin-top: 80px;
+  gap: 1.5rem;
+  font-family:'poppins',sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  height: auto;
+}
+.about .right-about img{
+  width: 85%;
+  height: 85%;
+}
+.about .left-about{
+  width: 50%;
+}
+.about .right-about{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.about .left-about h2{
+  font-weight: 500;
+  font-size: 3rem;
+}
+.about .left-about h2.highlights{
+  font-size: 2rem;
+}
+.about p{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  line-height: 29px;
+  color: rgb(170, 170, 170);
+}
+.about ul div h3{
+  font-weight: 500;
+}
+.about ul{
+  width: 94%;
+  position: relative;
+  left: 6%;
+  top: 1rem;
+}
 /* Footer section styles */
 
 footer .left-footer .social-icons i {

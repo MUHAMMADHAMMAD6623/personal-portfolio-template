@@ -51,6 +51,17 @@
     display: flex;
     justify-content: space-between;
   }
+  .about{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about .left-about{
+    width: 100%;
+  }
+  .about .right-about{
+    width: 100%;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 570px) {
   .contact .contact-container .name-input-container{
@@ -78,6 +89,7 @@
     position: absolute;
     top: 70px;
   }
+
   header nav .left .menu .bars{
     width: 33px;
     height: 3px;
@@ -97,6 +109,9 @@
     transform: translateY(-12px) rotate(-90deg);
   }
   .hero{
+    margin-top: 70px;
+  }
+  .about{
     margin-top: 70px;
   }
   .hero .right-hero img{
@@ -166,6 +181,18 @@
   .services .service-container .service-box h2{
     font-size: 1.4rem;
   }
+  .about .left-about .about-heading{
+    font-size: 2.2rem;
+  }
+  .about .left-about h2.highlights{
+    font-size: 1.7rem;
+  }
+  .about ul div h3{
+    font-size: 1.2rem;
+  }
+  .about ul div p{
+    font-size: 1rem;
+  }
 }
 @media (min-width:350px) and (max-width: 425px) {
   .hero .left-hero h1.skill{
@@ -176,6 +203,18 @@
   }
   .services .service-container .service-box h2{
     font-size: 1.3rem;
+  }
+  .about .left-about .about-heading{
+    font-size: 2rem;
+  }
+  .about .left-about h2.highlights{
+    font-size: 1.6rem;
+  }
+  .about ul div h3{
+    font-size: 1.1rem;
+  }
+  .about ul div p{
+    font-size: 1rem;
   }
 }
 @media (min-width:260px) and (max-width: 350px) {
@@ -197,6 +236,18 @@
   .skills .skill-heading{
     font-size: 2rem;
   }
+  .about .left-about .about-heading{
+    font-size: 1.7rem;
+  }
+  .about .left-about h2.highlights{
+    font-size: 1.3rem;
+  }
+  .about ul div h3{
+    font-size: 1rem;
+  }
+  .about ul div p{
+    font-size: 0.9rem;
+  }
 }
 
 /* Media queries that reduce padding of each section according to different screen sizes */
@@ -211,6 +262,9 @@
     .testimonial{
       padding: 80px 100px;
     }
+    .about{
+      padding: 80px 100px;
+    }
 }
 @media (min-width: 600px) and (max-width: 700px) {
   .hero{
@@ -222,6 +276,9 @@
   .testimonial{
     padding: 70px 85px;
   }
+  .about{
+    padding: 70px 85px;
+  }
 }
 @media (min-width: 400px) and (max-width: 600px) {
   .hero{
@@ -231,6 +288,9 @@
     padding: 70px 70px;
   }
   .testimonial{
+    padding: 70px 70px;
+  }
+  .about{
     padding: 70px 70px;
   }
 }
@@ -247,6 +307,9 @@
   .testimonial{
     padding: 65px 55px;
   }
+  .about{
+    padding: 65px 55px;
+  }
 }
 @media (min-width: 200px) and (max-width: 300px) {
   .hero{
@@ -259,6 +322,9 @@
     padding: 20px;
   }
   .testimonial{
+    padding: 65px 50px;
+  }
+  .about{
     padding: 65px 50px;
   }
 }
