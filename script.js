@@ -17,15 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function for the hamburger menu
   hamburgerIcon.addEventListener("click", () => {
     hamburgerIcon.classList.toggle("menu-clicked");
-    const sectionhiding = setTimeout(()=>{
-      universe.classList.toggle('not-needed')
-    },600)
+    universe.classList.toggle('not-needed')
     if (rightSection.style.height === "0px") {
       rightSection.style.height = "100vh";
     } else {
       rightSection.style.height = "0px";
     }
   });
+  
   // JavaScript code for smooth scrolling on clicking the navbar links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
