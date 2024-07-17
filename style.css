@@ -12,7 +12,10 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
-
+/* Css to hide all the section elements and footer element */
+.not-needed section,.not-needed footer{
+  display: none;
+}
 /* Navbar section styles starts */
 
 header {
