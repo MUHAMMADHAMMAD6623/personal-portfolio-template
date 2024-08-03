@@ -1,0 +1,398 @@
+/* Media query for creating the hamburger menu */
+@media screen and (max-width: 900px) {
+  /* Adjust nav height */
+  header nav {
+    height: 90px;
+  }
+  /* Display menu as flex container */
+  header nav .left .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Transform menu icon on click */
+  .menu-clicked {
+    transform: rotate(45deg);
+  }
+  /* Rotate bars for menu animation */
+  .menu-clicked .bars:nth-child(1) {
+    transform: translateY(14px) rotate(90deg);
+  }
+  .menu-clicked .bars:nth-child(3) {
+    transform: translateY(-14px) rotate(-90deg);
+  }
+  /* Adjust nav right section */
+  nav .right {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 0;
+    transition: height 0.6s ease-in-out;
+    z-index: 99;
+  }
+  /* Display nav items in column */
+  nav .right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* Margin for nav items */
+  nav .right ul li {
+    margin: 30px 0;
+  }
+  /* Color for nav links */
+  header nav .right ul li a {
+    color: rgb(0, 0, 0);
+  }
+  /* Fixed position for left section */
+  header .left {
+    position: fixed;
+    right: 0;
+    width: 58vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Column layout for about section */
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* Full width for left about */
+  .about .left-about {
+    width: 100%;
+  }
+  /* Center right about */
+  .about .right-about {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Media query to make contact section responsive */
+@media screen and (max-width: 570px) {
+  /* Column layout for name input container */
+  .contact .contact-container .name-input-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  /* Full width for input fields */
+  .contact .contact-container .name-input-container input {
+    width: 66vw;
+  }
+  /* Increased height for textarea */
+  .contact .contact-container .textarea-type {
+    height: 250px;
+  }
+}
+
+/* Media query to eliminate top footer section's padding bottom */
+@media screen and (max-width: 600px) {
+  /* Reduce padding bottom in footer */
+  footer .top-footer {
+    padding-bottom: 30px;
+  }
+}
+
+/* Media query for reducing the navbar height, reducing size of the menu */
+@media screen and (max-width: 475px) {
+  /* Adjust nav height */
+  header nav {
+    height: 70px;
+  }
+  /* Adjust position of right nav */
+  .right {
+    position: absolute;
+    top: 70px;
+  }
+  /* Adjust size of menu bars */
+  header nav .left .menu .bars {
+    width: 33px;
+    height: 3px;
+    margin: 4px 0;
+  }
+  /* Fixed position for menu */
+  header nav .left .menu {
+    position: fixed;
+    right: 40px;
+  }
+  /* Adjust position of right nav */
+  header nav .right {
+    top: 70px;
+  }
+  /* Transform bars for menu animation */
+  .menu-clicked .bars:nth-child(1) {
+    transform: translateY(12px) rotate(90deg);
+  }
+  .menu-clicked .bars:nth-child(3) {
+    transform: translateY(-12px) rotate(-90deg);
+  }
+  /* Margin adjustment for hero section */
+  .hero {
+    margin-top: 70px;
+  }
+  /* Margin adjustment for about section */
+  .about {
+    margin-top: 70px;
+  }
+  /* Hide hero image */
+  .hero .right-hero img {
+    display: none;
+  }
+  /* Increase height for textarea */
+  .contact .contact-container .textarea-type {
+    height: 320px;
+  }
+  /* Adjust footer layout */
+  footer .top-footer {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 0px;
+  }
+  /* Full width for right footer */
+  footer .top-footer .right-footer {
+    width: 100%;
+  }
+  /* Adjust font size for footer links */
+  footer .top-footer .right-footer .links a {
+    font-size: 1rem;
+  }
+  /* Adjust font size for footer text */
+  footer .bottom-footer p {
+    font-size: 0.9rem;
+  }
+  /* Adjust padding for footer */
+  footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  /* Center align bottom footer */
+  footer .bottom-footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Media query to reduce size of the header logo image and to position the hamburger menu */
+@media screen and (max-width: 365px) {
+  /* Adjust size of header logo image */
+  header nav .left a img {
+    width: 53px;
+    height: 50px;
+  }
+  /* Position menu icon */
+  header nav .left .menu {
+    position: fixed;
+    right: 30px;
+  }
+}
+
+/* Media query to adjust footer padding bottom */
+@media screen and (max-width: 445px) {
+  /* Reduce padding bottom in footer */
+  footer .top-footer {
+    padding-bottom: 13px;
+  }
+}
+
+/* Media query to hide the hero image for good responsiveness */
+@media screen and (max-width: 765px) {
+  /* Hide right hero section */
+  .hero .right-hero {
+    display: none;
+  }
+}
+
+/* Media queries that reduce font size of elements of each section according to different screen sizes */
+@media (min-width: 425px) and (max-width: 500px) {
+  /* Adjust font size in hero section */
+  .hero .left-hero h1.skill {
+    font-size: 2.2rem;
+  }
+  .hero .left-hero h2.name {
+    font-size: 1.7rem;
+  }
+  /* Adjust font size in services section */
+  .services .service-container .service-box h2 {
+    font-size: 1.4rem;
+  }
+  /* Adjust font size in about section */
+  .about .left-about .about-heading {
+    font-size: 2.2rem;
+  }
+  .about .left-about h2.highlights {
+    font-size: 1.7rem;
+  }
+  .about ul div h3 {
+    font-size: 1.2rem;
+  }
+  .about ul div p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 425px) {
+  /* Adjust font size in hero section */
+  .hero .left-hero h1.skill {
+    font-size: 2rem;
+  }
+  .hero .left-hero h2.name {
+    font-size: 1.6rem;
+  }
+  /* Adjust font size in services section */
+  .services .service-container .service-box h2 {
+    font-size: 1.3rem;
+  }
+  /* Adjust font size in about section */
+  .about .left-about .about-heading {
+    font-size: 2rem;
+  }
+  .about .left-about h2.highlights {
+    font-size: 1.6rem;
+  }
+  .about ul div h3 {
+    font-size: 1.1rem;
+  }
+  .about ul div p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 260px) and (max-width: 350px) {
+  /* Adjust font size in hero section */
+  .hero .left-hero h1.skill {
+    font-size: 1.7rem;
+  }
+  .hero .left-hero h2.name {
+    font-size: 1.5rem;
+  }
+  .hero .left-hero a.button {
+    font-size: 1.1rem;
+  }
+  /* Adjust font size in services section */
+  .services .service-container .service-box h2 {
+    font-size: 1.2rem;
+  }
+  /* Adjust font size in testimonial section */
+  .testimonial .testimonial-heading {
+    font-size: 2rem;
+  }
+  /* Adjust font size in skills section */
+  .skills .skill-heading {
+    font-size: 2rem;
+  }
+  /* Adjust font size in about section */
+  .about .left-about .about-heading {
+    font-size: 1.7rem;
+  }
+  .about .left-about h2.highlights {
+    font-size: 1.3rem;
+  }
+  .about ul div h3 {
+    font-size: 1rem;
+  }
+  .about ul div p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Media queries that reduce padding of each section according to different screen sizes */
+@media (min-width: 700px) and (max-width: 950px) {
+  /* Reduce padding in various sections */
+  .hero {
+    padding: 80px 100px;
+  }
+  .services {
+    padding: 80px 100px;
+  }
+  .testimonial {
+    padding: 80px 100px;
+  }
+  .about {
+    padding: 80px 100px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  /* Reduce padding in various sections */
+  .hero {
+    padding: 70px 85px;
+  }
+  .services {
+    padding: 70px 85px;
+  }
+  .testimonial {
+    padding: 70px 85px;
+  }
+  .about {
+    padding: 70px 85px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  /* Reduce padding in various sections */
+  .hero {
+    padding: 70px 70px;
+  }
+  .services {
+    padding: 70px 70px;
+  }
+  .testimonial {
+    padding: 70px 70px;
+  }
+  .about {
+    padding: 70px 70px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  /* Reduce padding in various sections */
+  .hero {
+    padding: 65px 55px;
+  }
+  .services {
+    padding: 65px 55px;
+  }
+  /* Reduce padding in service box */
+  .services .service-container .service-box {
+    padding: 25px;
+  }
+  .testimonial {
+    padding: 65px 55px;
+  }
+  .about {
+    padding: 65px 55px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 300px) {
+  /* Reduce padding in various sections */
+  .hero {
+    padding: 65px 50px;
+  }
+  .services {
+    padding: 65px 50px;
+  }
+  /* Reduce padding in service box */
+  .services .service-container .service-box {
+    padding: 20px;
+  }
+  .testimonial {
+    padding: 65px 50px;
+  }
+  .about {
+    padding: 65px 50px;
+  }
+}
