@@ -3,26 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Customize the title of the page -->
+     
     <title>Harry - Personal Portfolio HTML CSS JavaScript Template</title>
     <!-- Css stylesheets linked -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- Font Awesome cdn -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- swiper js css cdn needed for testimnial section -->
+
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
 
+<!-- Body starts below -->
+
   <body>
+    <!-- Header section starts here -->
     <header>
       <nav>
         <div class="left">
-          <div class="menu" onclick="menu()">
+          <div class="menu">
             <div class="bars not-clicked"></div>
             <div class="bars not-clicked"></div>
             <div class="bars not-clicked"></div>
           </div>
-          <a href="index.html"><img src="header.png" /></a>
+          <a href="index.html">Harry</a>
         </div>
         <div class="right">
           <ul>
@@ -35,6 +43,9 @@
         </div>
       </nav>
     </header>
+    <!-- Header section ends here -->
+
+    <!-- Hero section starts below -->
     <section class="hero">
       <div class="left-hero">
         <h2 class="name">I am Harry</h2>
@@ -47,14 +58,17 @@
         <a href="#" class="button">Download CV</a>
       </div>
       <div class="right-hero">
-        <img src="hero.jpg" />
+        <img src="images/hero.jpg" />
       </div>
     </section>
+    <!-- Hero section ends here -->
+
+    <!-- Services section starts below -->
     <section class="services" id="services">
       <h1>My Services</h1>
       <div class="service-container">
         <div class="service-box">
-          <img src="web-development.png" style="width: 35px; height: 35px" />
+          <img src="images/web-development.png" style="width: 35px; height: 35px" />
           <h2 class="service-heading">Web Development</h2>
           <p class="service-description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
@@ -66,7 +80,7 @@
           </p>
         </div>
         <div class="service-box">
-          <img src="web-development.png" style="width: 35px; height: 35px" />
+          <img src="images/web-development.png" style="width: 35px; height: 35px" />
           <h2 class="service-heading">Web Design</h2>
           <p class="service-description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
@@ -78,7 +92,7 @@
           </p>
         </div>
         <div class="service-box">
-          <img src="web-development.png" style="width: 35px; height: 35px" />
+          <img src="images/web-development.png" style="width: 35px; height: 35px" />
           <h2 class="service-heading">Web Development</h2>
           <p class="service-description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iusto
@@ -91,13 +105,16 @@
         </div>
       </div>
     </section>
+    <!-- Services section ends here -->
+
+    <!-- Testimonials section starts here -->
     <section class="testimonial" id="testimonials">
       <h2 class="testimonial-heading">Testimonials</h2>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="flex-start">
-              <img src="quotes.png" style="width: 45px; height: 45px" />
+              <img src="images/quotes.png" style="width: 45px; height: 45px" />
             </div>
             <div class="normal">
               <h2>Mark Zuckerburg</h2>
@@ -109,12 +126,12 @@
               </p>
             </div>
             <div class="flex-end">
-              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+              <img src="images/quotesinverted.png" style="height: 45px; width: 45px" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="flex-start">
-              <img src="quotes.png" style="width: 45px; height: 45px" />
+              <img src="images/quotes.png" style="width: 45px; height: 45px" />
             </div>
             <div class="normal">
               <h2>Bernard Arnault</h2>
@@ -126,12 +143,12 @@
               </p>
             </div>
             <div class="flex-end">
-              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+              <img src="images/quotesinverted.png" style="height: 45px; width: 45px" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="flex-start">
-              <img src="quotes.png" style="width: 45px; height: 45px" />
+              <img src="images/quotes.png" style="width: 45px; height: 45px" />
             </div>
             <div class="normal">
               <h2>Elon Musk</h2>
@@ -143,12 +160,12 @@
               </p>
             </div>
             <div class="flex-end">
-              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+              <img src="images/quotesinverted.png" style="height: 45px; width: 45px" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="flex-start">
-              <img src="quotes.png" style="width: 45px; height: 45px" />
+              <img src="images/quotes.png" style="width: 45px; height: 45px" />
             </div>
             <div class="normal">
               <h2>Bill Gates</h2>
@@ -160,12 +177,12 @@
               </p>
             </div>
             <div class="flex-end">
-              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+              <img src="images/quotesinverted.png" style="height: 45px; width: 45px" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="flex-start">
-              <img src="quotes.png" style="width: 45px; height: 45px" />
+              <img src="images/quotes.png" style="width: 45px; height: 45px" />
             </div>
             <div class="normal">
               <h2>Jeff Bezos</h2>
@@ -177,72 +194,43 @@
               </p>
             </div>
             <div class="flex-end">
-              <img src="quotesinverted.png" style="height: 45px; width: 45px" />
+              <img src="images/quotesinverted.png" style="height: 45px; width: 45px" />
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Testimonials section ends here -->
+
+    <!-- Skills section starts here -->
     <section class="skills">
       <h2 class="skill-heading">My Skills</h2>
       <div class="skill-container">
         <div class="skill-box">
-          <img
-            src="html.png"
-            style="
-              height: 50px;
-              width: 50px;
-              transition: scale 0.3s ease-in-out;
-            "
-          />
+          <h2>HTML</h2>
           <h3 class="skill-percentage">99%</h3>
         </div>
         <div class="skill-box">
-          <img
-            src="css-3.png"
-            style="
-              height: 50px;
-              width: 50px;
-              transition: scale 0.3s ease-in-out;
-            "
-          />
+          <h2>CSS</h2>
           <h3 class="skill-percentage">93%</h3>
         </div>
         <div class="skill-box">
-          <img
-            src="js.png"
-            style="
-              height: 50px;
-              width: 50px;
-              transition: scale 0.3s ease-in-out;
-            "
-          />
+          <h2>JS</h2>
           <h3 class="skill-percentage">90%</h3>
         </div>
         <div class="skill-box">
-          <img
-            src="wordpress.png"
-            style="
-              height: 50px;
-              width: 50px;
-              transition: scale 0.3s ease-in-out;
-            "
-          />
+          <h2>WordPress</h2>
           <h3 class="skill-percentage">100%</h3>
         </div>
         <div class="skill-box">
-          <img
-            src="squarespace.png"
-            style="
-              height: 50px;
-              width: 50px;
-              transition: scale 0.3s ease-in-out;
-            "
-          />
+          <h2>Squarespace</h2>
           <h3 class="skill-percentage">95%</h3>
         </div>
       </div>
     </section>
+    <!-- Skills section ends here -->
+
+    <!-- Contact section starts here -->
     <section class="contact" id="Contact">
       <h2 class="contact-heading">Get in Touch</h2>
       <div class="contact-container">
@@ -267,6 +255,9 @@
         <button class="button">Submit</button>
       </div>
     </section>
+    <!-- Contact section ends here -->
+
+    <!-- Footer section starts here -->
     <footer>
       <div class="top-footer">
       <div class="left-footer">
@@ -288,19 +279,23 @@
       </div>
       <div class="right-footer">
         <div class="links">
-          <a href="Info.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="Info.html">Services</a>
-          <a href="Info.html">Privacy Policy</a>
-          <a href="Info.html">Terms of Service</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Services</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
       </div>
       </div>
       <div class="bottom-footer">
-        <p class="copyright-text">&copy; 2050 Imaginate-devs ltd. All Rights Reserved</p>
+        <p class="copyright-text">&copy; 2050 All Rights Reserved.</p>
       </div>
     </footer>
+    <!-- Footer section ends here -->
+
+     <!-- JS file linked -->
     <script src="script.js"></script>
+
     <!-- swiper js javascript cdn needed to make the testimonial section -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
